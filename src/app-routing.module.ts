@@ -16,6 +16,11 @@ const routes: Route[] = [
     loadComponent: () =>
       import('./about/about.component').then((mod) => mod.AboutComponent),
   },
+  {
+    path: 'input',
+    loadComponent: () =>
+      import('./input/input.component').then((mod) => mod.InputComponent),
+  },
 ];
 
 @NgModule({
