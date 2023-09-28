@@ -36,3 +36,5 @@ bootstrapApplication(App, {
     importProvidersFrom(HttpClientModule),
   ],
 });
+
+//https://netbasal.com/angular-standalone-components-welcome-to-a-world-without-ngmodule-abd3963e89c5
