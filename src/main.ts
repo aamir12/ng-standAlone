@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'my-app',
@@ -30,5 +31,8 @@ export class App {
 }
 
 bootstrapApplication(App, {
-  providers: [importProvidersFrom(AppRoutingModule)],
+  providers: [
+    importProvidersFrom(AppRoutingModule),
+    importProvidersFrom(HttpClientModule),
+  ],
 });
